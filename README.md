@@ -10,5 +10,11 @@ I have placed initiation of fetchdata in oncreate itself, hence when app opens i
 
 
 we can click the listid and items will be listed below it.
+
 ![image](https://github.com/Nims972/fetch-list-app/assets/22131911/2257d8ac-c50f-4cf5-a168-88ff2130d917)
+
+Added toast on click of item also.
+
+![image](https://github.com/Nims972/fetch-list-app/assets/22131911/f415c871-6669-4403-ac3e-b01051e6778b)
+
 
