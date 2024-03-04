@@ -8,6 +8,6 @@
     android:gravity="left"
     android:paddingLeft="32dp"
     android:paddingTop="8dp"
-    android:text="Dummy"
     android:textSize="34sp"
-    android:textStyle="bold" />
+    android:textStyle="bold"
+    android:shadowRadius="@integer/material_motion_duration_long_2"/>

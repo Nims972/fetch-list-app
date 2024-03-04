@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Fetch App 2</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="fetch_url">https://fetch-hiring.s3.amazonaws.com/hiring.json</string>
 </resources>

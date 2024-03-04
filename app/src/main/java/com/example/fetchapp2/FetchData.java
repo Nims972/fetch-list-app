@@ -64,7 +64,6 @@ public class FetchData extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPostExecute(String result) {
-        Log.d("result123",result);
         ObjectMapper mapper = new ObjectMapper();
         List<ListItem> fetchedData=null;
         try {
@@ -72,7 +71,7 @@ public class FetchData extends AsyncTask<String, Void, String> {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
-        Log.d("123123",String.valueOf(fetchedData));
+        Log.d("fetchdebug",String.valueOf(fetchedData));
         try {
             TreeMap<Integer, ArrayList<ListItem>> groupMap = new TreeMap<>();
             for (ListItem li : fetchedData) {
@@ -111,9 +110,8 @@ public class FetchData extends AsyncTask<String, Void, String> {
 
             ExpandableListAdapter adapter = new ExpandableListAdapter(activity, groups);
             expView.setAdapter(adapter);
-            Log.d("123123","alldone");
         }catch (Exception e){
-            Log.d("123123",e.getMessage());
+            Log.e("exception",e.getMessage());
         }
 
     }
