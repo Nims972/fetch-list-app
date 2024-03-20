@@ -91,7 +91,11 @@ public class FetchData extends AsyncTask<String, Void, String> {
                     @Override
                     public int compare(ListItem li1, ListItem li2) {
                         if(li1.getListId()==li2.getListId()) {
-                            return li1.getName().compareTo(li2.getName());
+//                            String tm1[]=li1.getName().split(" ");
+//                            String tm2[]=li2.getName().split(" ");
+                            return li1.getItemNo().compareTo(li2.getItemNo());
+//                            return Integer.valueOf(tm1[1]).compareTo(Integer.valueOf(tm2[1]));
+//                            return li1.getName().compareTo(li2.getName());
                         } else
                             return li1.getListId().compareTo(li2.getListId());
                     }
